@@ -1,0 +1,6 @@
+require 'vue/configuration'
+require 'vue/controller_helper'
+require 'vue/version'
+require 'vue/railtie'
+require 'vue/view_helper'
+require 'vue/controller_renderer'
