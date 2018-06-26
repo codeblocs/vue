@@ -4,8 +4,7 @@ module Vue
 
     class_methods do
       def pack_tag_for(pack = nil)
-        pack ||= 'world'
-        puts "hello #{pack}"
+        before_action { @pack ||= pack.to_s }
       end
     end
   end
