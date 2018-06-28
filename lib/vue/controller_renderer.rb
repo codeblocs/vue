@@ -20,7 +20,9 @@ module Vue
     private
 
     def default_options
-      {}
+      {
+        prerender: false
+      }
     end
   end
 end

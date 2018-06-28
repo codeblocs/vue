@@ -29,6 +29,14 @@ module Vue
         end
       end
 
+      def create_server_rendering_file
+        unless options[:skip_server_rendering]
+          server_rendering_path = File.join(components_dir, 'packs')
+
+          template('server_rendering.js', server_rendering_path)
+        end
+      end
+
       def create_stores_dir
         empty_directory File.join(components_dir, 'stores')
 
