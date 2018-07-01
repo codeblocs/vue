@@ -68,7 +68,8 @@ This will render your component from controller with server-side pre-rendering, 
 2. Integration with Rails Sprockets.
 3. Provide more options for rendering Vue components using custom provided helpers.
 4. Converting component names to different cases based on application conventions.
-5. ...
+5. Add support for older versions of Rails and Webpacker.
+6 ...
 
 ## Contributing
 
