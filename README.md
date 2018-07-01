@@ -36,6 +36,17 @@ rails g vue:component ComponentName
 
 This will generate Vue component in `app/javascripts/components`, which you can customize however you want.
 
+### Server rendering support
+
+For server rendering support you need to install `vue-server-renderer` npm package manually for now.
+
+```
+yarn add vue-server-renderer
+```
+
+We're planning to automate that in future development releases.
+
+
 ### Rendering Vue Component from Rails view
 
 ```ruby
@@ -51,6 +62,13 @@ render vue_component: 'ComponentName', props: { message: 'Hello World' }, preren
 ```
 
 This will render your component from controller with server-side pre-rendering, which defaults to false.
+
+## TODO
+1. Proper gem configuration through initializer.
+2. Integration with Rails Sprockets.
+3. Provide more options for rendering Vue components using custom provided helpers.
+4. Converting component names to different cases based on application conventions.
+5. ...
 
 ## Contributing
 

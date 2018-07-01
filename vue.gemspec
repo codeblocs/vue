@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["igorpreston@gmail.com"]
 
   spec.summary       = %q{Vue gem for Rails}
-  spec.homepage      = "https://vue.codeblocs.com"
+  spec.homepage      = "https://github.com/codeblocs/vue"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -40,4 +40,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 5.0"
   spec.add_dependency "webpacker", "~> 3.5"
+  spec.add_dependency "execjs"
 end
