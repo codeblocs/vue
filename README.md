@@ -38,7 +38,7 @@ This will generate Vue component in `app/javascripts/components`, which you can 
 
 ### Rendering Vue Component from Rails view
 
-```
+```ruby
 <%= vue_component('ComponentName', { message: 'Hello World' }, prerender: true) %>
 ```
 
@@ -46,7 +46,7 @@ This will render your component in the view with server-side pre-rendering (`pre
 
 ## Rendering Vue Component from Rails controller
 
-```
+```ruby
 render vue_component: 'ComponentName', props: { message: 'Hello World' }, prerender: true
 ```
 
