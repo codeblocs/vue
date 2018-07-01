@@ -40,5 +40,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 5.0"
   spec.add_dependency "webpacker", "~> 3.5"
-  spec.add_dependency "execjs"
+  spec.add_dependency "execjs", "~> 2.4"
 end
